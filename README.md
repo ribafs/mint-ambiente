@@ -1,6 +1,9 @@
 # Script para instalação do ambiente web para Linux Mint
 Script para instalação do Apache, PHP 7.2 e MySQL no Linux Mint
 
+## Adaptações
+Uso este script para instalar o ambiente web no Linux Mint 19.3, mas pode facilmente ser adaptado para outras versões do Mint e de outros Debians.
+
 ## Este script usa a lib dialog para facilitar
 
 ## Itens

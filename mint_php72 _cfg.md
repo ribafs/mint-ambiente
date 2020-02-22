@@ -1,13 +1,14 @@
-Configuração do php e apache
+## Configuração do php e apache
 
-Configurar php
+### Configurar php
 
 sudo nano /etc/php/7.2/apache2/php.ini
 
 display_errors = On
 
 
-Configurar apache
+
+### Configurar apache
 
 sudo nano /etc/apache2/apache2.conf
 
@@ -27,7 +28,10 @@ Trocar None por All
 ```
 sudo systemctl restart apache2
 
-Sugestão: Instalar agerenciador web do MySQL adminer.php - http://adminer.org
+
+### Sugestão: 
+
+Instalar agerenciador web do MySQL adminer.php - http://adminer.org
 
 
 

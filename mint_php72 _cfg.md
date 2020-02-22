@@ -2,15 +2,20 @@ Configuração do php e apache
 
 Configurar php
 
+sudo nano /etc/php/7.2/apache2/php.ini
+
 display_errors = On
 
-sudo nano /etc/php/7.2/apache2/php.ini
 
 Configurar apache
 
+sudo nano /etc/apache2/apache2.conf
+
+Adicionar
+
 ServerName localhost
 
-Trocando None por All
+Trocar None por All
 
 ```bash
 <Directory />
@@ -20,12 +25,9 @@ Trocando None por All
     Allow from all
 </Directory>
 ```
-
-sudo nano /etc/apache2/apache2.conf
-
 sudo systemctl restart apache2
 
-Instalar adminer.php - http://adminer.org
+Sugestão: Instalar agerenciador web do MySQL adminer.php - http://adminer.org
 
 
 

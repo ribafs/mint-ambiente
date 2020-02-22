@@ -16,14 +16,14 @@ servico=$(dialog --stdout --backtitle 'Instalação de pacotes no Ubuntu Server 
       1) apt update;;
       2) clear;
 # "Instalar pacotes básicos. Tecle Enter para instalar!";
-apt install -y apache2 libapache2-mod-php7.2 aptitude git mc;
+apt install -y apache2 libapache2-mod-php7.2 aptitude git mc composer;
 
 # Instalar SGBDs somente para testes locais. Visto que o servidor é outro: 10.0.0.60
-apt install -y mysql-server postgresql sqlite;
+apt install -y mysql-server;
 
 # "Instalar PHP 7 e extensões. Tecle Enter para instalar!";
-apt install -y php7.2 php7.2-bcmath php7.2-gd php7.2-mysql php7.2-pgsql php7.2-curl;
-apt install -y php-pear php7.2-xml php7.2-xsl curl phpunit php-xdebug php7.2-intl composer;
+apt install -y php7.2 php7.2-bcmath php7.2-gd php7.2-mysql php7.2-curl;
+apt install -y php-pear php7.2-xml php7.2-xsl curl phpunit php-xdebug php7.2-intl;
 apt install -y php7.2-zip php7.2-mbstring php-gettext php-mbstring php7.2-fpm;
 phpenmod mbstring;
 
